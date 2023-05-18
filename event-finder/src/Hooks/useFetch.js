@@ -19,7 +19,7 @@ const useFetch = (url) => {
       })
       .catch((e) => {
         setIsPending(false);
-        setError(e.message);
+        setError("Please make sure you entered a correct city name");
       });
   }, [url]);
   return { data, isPending, error };

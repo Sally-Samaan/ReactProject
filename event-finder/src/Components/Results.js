@@ -1,13 +1,13 @@
 import useFetch from "../Hooks/useFetch";
 import Event from "./Event";
 
-const Results = () => {
+const Results = ({ cityValue }) => {
   const {
     data: event,
     isPending,
     error,
   } = useFetch(
-    "https://app.ticketmaster.com/discovery/v2/events.json?apikey=FNkIpBYg2oKvESegKgnS6tiZhtYNY7gQ&&city=groningen"
+    `https://app.ticketmaster.com/discovery/v2/events.json?apikey=FNkIpBYg2oKvESegKgnS6tiZhtYNY7gQ&&city=${cityValue}`
   );
 
   return (

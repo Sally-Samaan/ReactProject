@@ -17,7 +17,6 @@ const EventPage = () => {
   return (
     <div>
       <Navbar />
-      <h1>{id + " Ygolon Yef3l"}</h1>
       {error && <h1>{error}</h1>}
       {isPending && <h1>Loading...</h1>}
       {event && (

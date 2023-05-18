@@ -1,0 +1,67 @@
+.event-details-container {
+  display: flex;
+  align-items: center;
+}
+
+.imageDetails {
+  flex: 3;
+  width: 80vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.event-title {
+  color: #ccf5ac;
+  font-weight: bolder;
+  background-color: #ef798a;
+  border-radius: 20px;
+}
+
+.event-details-box {
+  background-color: #ccf5ac;
+  padding: 20px;
+  color: white;
+  flex: 1;
+}
+
+.event-details p {
+  margin-bottom: 10px;
+}
+
+.buy-ticket-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ef798a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.buy-ticket-link:hover {
+  background-color: #d7617b;
+}
+
+.date {
+  color: #7e2e84;
+  font-size: 20px;
+}
+.venue {
+  color: #7e2e84;
+}
+
+@media screen and (max-width: 768px) {
+  .event-details-container {
+    flex-direction: column;
+  }
+
+  .imageDetails {
+    width: 100%;
+  }
+
+  .event-details-box {
+    margin-top: 20px;
+  }
+}

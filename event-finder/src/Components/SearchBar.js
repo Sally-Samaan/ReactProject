@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = ({ setCityValue }) => {
+  const [city, setCity] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setCityValue(city);
+  };
   return (
     <div>
-      <input type="find events in your city" />
-      <button>search</button>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor=""></label>
+        <input
+          type="text"
+          required
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+          className="search-input"
+        />
+        <button type="submit" className="search-button">
+          search
+        </button>
+      </form>
     </div>
   );
 };
