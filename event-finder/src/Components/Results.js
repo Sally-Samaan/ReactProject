@@ -2,12 +2,14 @@ import useFetch from "../Hooks/useFetch";
 import Event from "./Event";
 
 const Results = ({ cityValue }) => {
+  const apiKey = process.env.REACT_APP_API_KEY;
+
   const {
     data: event,
     isPending,
     error,
   } = useFetch(
-    `https://app.ticketmaster.com/discovery/v2/events.json?apikey=FNkIpBYg2oKvESegKgnS6tiZhtYNY7gQ&&city=${cityValue}`
+    `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${apiKey}&&city=${cityValue}`
   );
 
   return (
