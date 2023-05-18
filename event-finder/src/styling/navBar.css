@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Dancing+Script:wght@400;500&family=Foldit:wght@500&family=Kanit:wght@300&family=Reem+Kufi+Fun&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #7e2e84;
+  padding: 10px;
+  font-size: large;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ccf5ac;
+}
+
+.favorites-link {
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  color: #ccf5ac;
+}
+
+.heart {
+  color: #d14081;
+}
+
+.menu {
+  font-weight: bolder;
+}
